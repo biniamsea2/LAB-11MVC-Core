@@ -29,5 +29,11 @@ namespace WebApplicationMVC.Models
             Category = category;
             Context = context;
         }
+
+        public void GetPersons()
+        {
+
+        }
+
     }
 }
