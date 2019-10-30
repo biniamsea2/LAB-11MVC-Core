@@ -27,12 +27,14 @@ namespace WebApplicationMVC
                 app.UseDeveloperExceptionPage();
             }
 
-            //need this for css
+            app.UseRouting();
+
+
+            //need this for css and more
             app.UseStaticFiles(); 
 
 
 
-            app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
