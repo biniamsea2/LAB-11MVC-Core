@@ -49,9 +49,9 @@ Then select and open ```# Lab-11MVC-Core.sln```
 
 #### Application Diagram
 Application Start
-![Image 1](https://github.com/biniamsea2/Lab07Collections/blob/master/Screenshots/Screenshot%20(42).png)
-Viewing All Books
-![Image 1](https://github.com/biniamsea2/Lab07Collections/blob/master/Screenshots/Screenshot%20(43).png)
+![Image 1](https://github.com/biniamsea2/LAB-11MVC-Core/blob/master/Screenshots/Screenshot%20(50).png)
+Viewing All TIME's Person of the Year Winners
+![Image 1](https://github.com/biniamsea2/LAB-11MVC-Core/blob/master/Screenshots/Screenshot%20(51).png)
 
 
 
