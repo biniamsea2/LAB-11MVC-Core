@@ -18,8 +18,7 @@ namespace WebApplicationMVC.Models
         public string Category { get; set; }
         public string Context { get; set; }
 
-    
-
+   
         public static List<TimePerson> GetPersons(int yearFrom, int yearTo)
         {
             string path = "./wwwroot/personOfTheYear.csv";
@@ -29,7 +28,7 @@ namespace WebApplicationMVC.Models
             for (int i = 1; i < myFile.Length; i++)
             {
                 string [] test = myFile[i].Split(",");
-                ListofPeople.Add(new TimePerson()
+                TimePerson person = new TimePerson()
                 {
                     Year = (test[0] == "") ? 0 : Convert.ToInt32(test[0]),
                     Honor = (test[1]),
@@ -40,9 +39,10 @@ namespace WebApplicationMVC.Models
                     Title = (test[6]),
                     Category = (test[7]),
                     Context = (test[8])
-                });
+                };
+                ListofPeople.Add(person);
             }
-            List<TimePerson> testpeople = ListofPeople.Where(p => p.Year >= yearFrom && p.Year <= yearTo).ToList();
+            List<TimePerson> testpeople = ListofPeople.Where(p => (p.Year >= yearFrom) && (p.Year <= yearTo)).ToList();
             return testpeople;
 
 
